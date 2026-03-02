@@ -19,7 +19,7 @@ def open_image():
 def gif_creater(frames):
 
     for value in range(7):
-        enhancer = ImageEnhance.Brightness(open_image())
+        enhancer = ImageEnhance.Contrast(open_image())
         frame = enhancer.enhance(0.6+value*0.3)
         frames.append(frame)
 
